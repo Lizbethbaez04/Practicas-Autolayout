@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practica_autolayout01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Raiz">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RzQ-jO-heo" userLabel="Contenedor Azul">
+                                <rect key="frame" x="0.0" y="0.0" width="463" height="414"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thermometer_down" translatesAutoresizingMaskIntoConstraints="NO" id="FD2-rd-D3k">
+                                        <rect key="frame" x="59" y="103" width="377" height="253"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cuarto frío # 28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMx-nq-ASh">
+                                        <rect key="frame" x="139" y="40" width="217" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.61313963741027877" green="0.78109075437377862" blue="0.80372252409833334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lMx-nq-ASh" firstAttribute="top" secondItem="RzQ-jO-heo" secondAttribute="top" constant="44" id="9jh-dp-kMl"/>
+                                    <constraint firstItem="lMx-nq-ASh" firstAttribute="centerX" secondItem="RzQ-jO-heo" secondAttribute="centerX" id="N1e-nF-Pau"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WnC-dZ-0Gk" userLabel="Contenedor Salmon">
+                                <rect key="frame" x="461" y="0.0" width="435" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-2°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXg-YV-Xxa">
+                                        <rect key="frame" x="152" y="164" width="149.5" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5881185973019607" blue="0.5974815370502119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hXg-YV-Xxa" firstAttribute="top" secondItem="WnC-dZ-0Gk" secondAttribute="top" constant="75" id="2QL-uf-gL8"/>
+                                    <constraint firstItem="hXg-YV-Xxa" firstAttribute="centerX" secondItem="WnC-dZ-0Gk" secondAttribute="centerX" id="muS-ds-tpq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WnC-dZ-0Gk" secondAttribute="bottom" id="9dZ-nG-f68"/>
+                            <constraint firstItem="RzQ-jO-heo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="JdR-Io-Wsy"/>
+                            <constraint firstItem="RzQ-jO-heo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ytu-1R-Bft"/>
+                            <constraint firstItem="WnC-dZ-0Gk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="hng-2f-r28"/>
+                            <constraint firstItem="RzQ-jO-heo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y8B-RQ-dYz"/>
+                            <constraint firstItem="WnC-dZ-0Gk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="yCU-9G-MkN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.68115942028987"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thermometer_down" width="512" height="512"/>
+    </resources>
+</document>
